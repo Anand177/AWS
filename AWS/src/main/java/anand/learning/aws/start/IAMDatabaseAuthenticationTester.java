@@ -3,6 +3,7 @@ package anand.learning.aws.start;
 import com.amazonaws.services.rds.auth.RdsIamAuthTokenGenerator;
 import com.amazonaws.services.rds.auth.GetIamAuthTokenRequest;
 import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
 //import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 
@@ -23,9 +24,9 @@ import java.net.URL;
 
 public class IAMDatabaseAuthenticationTester {
     //AWS Credentials of the IAM user with policy enabling IAM Database Authenticated access to the db by the db user.
-//    private static final DefaultAWSCredentialsProviderChain creds = new DefaultAWSCredentialsProviderChain();
-    private static final String AWS_ACCESS_KEY = "AKIAVB2YLRLBQ2CEDQPA";
-    private static final String AWS_SECRET_KEY = "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";
+    private static final DefaultAWSCredentialsProviderChain creds = new DefaultAWSCredentialsProviderChain();
+    private static final String AWS_ACCESS_KEY = "XXXXXX";
+    private static final String AWS_SECRET_KEY = "XXXXXX";
 
     //Configuration parameters for the generation of the IAM Database Authentication token
     private static final String RDS_INSTANCE_HOSTNAME = "mydb.ci7tmv98eevs.us-east-2.rds.amazonaws.com";
